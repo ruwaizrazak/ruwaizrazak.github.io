@@ -1,0 +1,94 @@
+$font-family-base: "Lato", sans-serif;
+$Primary-color: #E860FF;
+$border-color:#DEECF9;
+
+.primary-link{
+color: $Primary-color;
+}
+
+
+
+.light{
+  font-weight: 300;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.mt-6{
+  margin-top: 20vh !important;
+}
+
+.mt-7 {
+  margin-top: 20px !important;
+}
+
+a{
+  font-decoration:none;
+}
+
+
+
+    .experience:hover{
+     transform: scale(1.05,1.1);
+     transition-timing-function: ease-in;
+     translate: 10px 0px;
+     transition: 0.3s;
+     background-color: #F9F9F9;
+     padding: 20px;
+    // border-style: dashed;
+     //border-width: 1px;
+    // border-color: #E860FF;
+     align-self: center;
+    }
+
+    .link{
+      color: $Primary-color;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+
+.listnav{
+  padding: 10px;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.navbar{
+  border-radius: 20px;
+  margin-top: 10px;
+//* From https://css.glass */
+  background: rgba(255, 255, 255, 0.31);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  //height: 70px;
+}
+
+.tldr{
+  border: 5px;
+  border-color:$border-color;
+  border-style: solid;
+}
+
+.highlight{
+  background-color: $border-color;
+}
+
+#testimony{
+  background-color:$border-color;
+  padding: 30px;
+}
+
+#portrait{
+  max-height: 400px;
+}
+
+#gameslist{
+  max-width: 1000px;
+}
