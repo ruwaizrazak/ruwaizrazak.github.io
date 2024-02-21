@@ -80,4 +80,15 @@ a {
   max-width: 1000px;
 }
 
+#photograph {
+  background-image: url("images/me.jpg");
+  width: 80%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-clip: padding-box;
+  background-position-y: -80px;
+}
+
 /*# sourceMappingURL=style.css.map */
