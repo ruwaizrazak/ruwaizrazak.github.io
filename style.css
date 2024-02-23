@@ -91,4 +91,10 @@ a {
   background-position-y: -80px;
 }
 
+mark {
+  background-color: yellow !important;
+  font-weight: 700 !important;
+  padding: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
