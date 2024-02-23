@@ -29,19 +29,20 @@ a{
 }
 
 
+.experience{
+  padding: 20px;
+}
 
-    .experience:hover{
-     transform: scale(1.05,1.1);
-     transition-timing-function: ease-in;
-     translate: 10px 0px;
-     transition: 0.3s;
-     background-color: #F9F9F9;
-     padding: 20px;
-    // border-style: dashed;
-     //border-width: 1px;
-    // border-color: #E860FF;
-     align-self: center;
-    }
+.experience:hover{
+      background-color: rgba(255, 255, 255, 0.31);
+      transform: scale(1.1,1.1);
+      transition: all 0.2s ease-in;;
+      transition-delay: 20ms;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10.2px);
+      -webkit-backdrop-filter: blur(10.2px);
+      border-radius: 5px;
+}
 
     .link{
       color: $Primary-color;
@@ -108,4 +109,13 @@ mark{
   background-color: yellow !important;
   font-weight: 700 !important;
   padding:5px;
+}
+
+.btn:hover{
+transform: scale(1.1, 1.1);
+  transition: all 0.2s ease-in;
+  ;
+  transition-delay: 20ms;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
 }
