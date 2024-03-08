@@ -169,7 +169,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   #gamesworked {
       img {
         width: 100px;
@@ -179,9 +179,38 @@
         //display: inline;
       }
     }
+        #FARMVILLE{
+          .workDesc {
+            background-color: #E6FEED;
+          }
+
+          .imagesection {
+            background-color: #007F22;
+          }
+        }
+
+        #EnA{
+          .workDesc {
+            background-color: #ECF0F9;
+          }
+
+          .imagesection {
+            background-color: #223965;
+          }
+        }
+
+        #DH2018{
+          .workDesc {
+            background-color: #FEF6E6;
+          }
+
+          .imagesection {
+            background-color: #E19707;
+          }
+        }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 375px) {
   #gamesworked {
     img {
       width: 90px;
@@ -191,4 +220,33 @@
       //display: inline;
     }
   }
+    #FARMVILLE {
+      .workDesc {
+        background-color: #E6FEED;
+      }
+
+      .imagesection {
+        background-color: #007F22;
+      }
+    }
+
+    #EnA {
+      .workDesc {
+        background-color: #ECF0F9;
+      }
+
+      .imagesection {
+        background-color: #223965;
+      }
+    }
+
+    #DH2018 {
+      .workDesc {
+        background-color: #FEF6E6;
+      }
+
+      .imagesection {
+        background-color: #E19707;
+      }
+    }
 }
