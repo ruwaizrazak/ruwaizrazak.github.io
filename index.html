@@ -17,119 +17,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title class="bold">Ruwaiz Razak</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Ruwaiz Razak</title>
   </head>
   <body>
     <!-- Navbar begins here -->
-      <nav class="navbar container sticky-top navbar-expand-lg">
-        <dˀiv class="container-fluid">
-          <a class="navbar-brand" href="#">RUWAIZ RAZAK</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item listnav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item listnav">
-                <a class="nav-link" href="me.html">ME</a>
-              </li>
-              <li class="nav-item listnav">
-                <a class="btn btn-primary" href="https://drive.google.com/file/d/1wdCp2R-qVM-IK5cyMs9qyPNwOvSQSHs1/view?usp=share_link" target="_blank" role="button">Download CV</a>
-              </li>
-
-            </ul>
-          </div>
-        </dˀiv>
+      <nav class="navbar">
+        <form class="container justify-content-end">
+          <a class="active" href="#">HOME</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="./about.html">ABOUT</a>
+        </form>
       </nav>
     <!--Navbar ends here-->
-    <div class="container mt-6">
+
+    <!--hero container starts-->
+    <div class="container" id="hero">
       <div class="row">
-        <div class="col-lg-8">
-          <p class="fs-2">I design and build experiences. Built multiple features, KPI optimisations and Usability improvements at <a href="http://www.zynga.com" target="_blank"><mark>Zynga</mark></a> and <a href="https://www.glu.com/" target="_blank"><mark>Glu</mark></a></p>
+        <div class="col-lg-9"><h1>RUWAIZ RAZAK <br><mark>UX DESIGNER</mark></h1></div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-7">
+          <p>Through research-heavy and optimised design process, I help products to deliver great experiences for users.</p>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-1 mt-3">
-          <a class="btn btn-primary" href="https://drive.google.com/file/d/1wdCp2R-qVM-IK5cyMs9qyPNwOvSQSHs1/view?usp=share_link" target="_blank" role="button">Download CV</a> &nbsp;&nbsp&nbsp;
-          <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/ruwaizrazak" target="_blank" role="button">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container">
-      <div class="row">
-        <div class="mb-5 mt-6">
-          <h4>WORK EXPERIENCE</h4>
-        </div>
-
-        <!--Zynga Experience Starts here-->
-        <div class="row">
-          <div class="mb-4 experience" onclick="location.href='./zynga.html';" style="cursor:pointer;">
-            <h6>Zynga <span class="light mx-2">2019-2024<span></h6>
-            <h4>Senior Experience Designer</h4>
-            <p class="mb-5 col-md-8">Involved in all aspects of the product lifecycle, from brainstorming and defining requirements with PMs, to designing
-              and testing interfaces, as well as working with engineers to make sure everything comes together just right. However, <mark>Im not able to talk more about those in the website due to NDA</mark><a href="#">Read More</a></p>
-            <img
-              src="images/zyngapressclub.jpg"
-              class="img-fluid col">
-          </div>
-        </div>
-        <hr class="my-5 mx-0 col-sm-5">
-        <!--Zynga Experience Ends here-->
-
-        <!--Glu Mobile Experience Starts here-->
-        <div class="row">
+        <div class="d-flex align-items-start">
           <div>
-            <h6>Glu Mobile <span class="light mx-2">2018-2019<span></h6>
-            <h4 id="experienceDescription">Associate Experience Designer</h4>
-            <p class="mb-5 col-lg-8">Contributed as the sole UX designer for 4 games simultaneously. Here are the few case studies Im allowed to Share</p>
+            <a href="https://drive.google.com/file/d/1wdCp2R-qVM-IK5cyMs9qyPNwOvSQSHs1/view?usp=sharing" target="_blank">Download CV</a>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div>
+            <a href="mailto:hello@ruwaizrazak.com" type="button" class="btn btn-outline-dark">hello@ruwaizrazak.com</a>
           </div>
         </div>
-        <div class="row mt-2 justify-content-between">
-          <div class="experience col-lg-5 col-md-6 mb-5" onclick="location.href='./onboardingfunnel.html';" style="cursor:pointer;">
-            <h5>Optimizing Onboarding Funnel</h5>
-            <p class="mb-4 col">Analyzed user onboarding funnel for the game quantitatively and designed an optimization which
-              reduced the churn rate
-              significantly. <br> <a href="#">Read More</a></p>
-            <img src="images/deerhunteronboarding.jpg"
-              class="img-fluid">
-          </div>
+    </div> <!--hero container ends-->
 
-          <div class="experience col-lg-5 col-md-6 mb-5 offset-lg-1" onclick="location.href='tournamentsystem.html';" style="cursor:pointer;">
-            <h5>Building Systems to Engage Elder Players</h5>
-            <p class="mb-4 col">Built a weekly tournament event which is aimed to engage users intensely over a period of time. <br> <a href="#">Read More</a></p>
-            <img src="images/fes.jpg" class="img-fluid">
-          </div>
-
-        </div>
-        <!--Glu Mobile Experience Ends here-->
+    <!--work starts-->
+    <div class="container" id="works">
+      <div class="d-flex justify-content-between">
+        <h3>Selected Works</h3>
+        <img src="./images/DownArrow.png" alt="" id="arrow">
       </div>
-      <!--Footer Starts here-->
     </div>
     <div class="container">
-      <hr class="my-5 mx-0">
-      <div class="row my-5">
-        <div class="col">
-          <p class="h3 col-md-8 mt-5">This doesnt have to be over.</p>
-          <p class="mb-4">Email me at <a href="mailto:hello@ruwaizrazak.com">hello@ruwaizrazak.com</a> to talk about
-            anything.</p>
-          <a class="btn btn-primary mb-5" href="https://drive.google.com/file/d/1wdCp2R-qVM-IK5cyMs9qyPNwOvSQSHs1/view?usp=share_link" target="_blank" role="button">Download CV</a> &nbsp;&nbsp&nbsp;
-          <a class="btn btn-outline-primary mb-5" href="https://www.linkedin.com/in/ruwaizrazak" target="_blank" role="button">LinkedIn</a>
-
+      <div class="row" id="companyHeading">
+        <div class="col-lg-7">
+          <h3>At Zynga</h3>
+          <p>Involved in all aspects of the product lifecycle, from brainstorming and defining requirements with PMs to designing and
+          testing interfaces, as well as working with engineers to make sure everything comes together just right. <br><br> Here are few
+          projects I worked at Zynga.</p>
+          <br>
         </div>
       </div>
     </div>
+<!--individual cards-->
+<!--fv3 starts-->
+      <div class="container individualWork" id="FARMVILLE">
+        <div class="row">
+           <div class="col-md-6 d-flex align-content-between flex-wrap workDesc" id="Desc">
+               <h3>SENIOR USER EXPERIENCE DESIGNER</h3>
+
+               <div>
+                 <a href="./farmville3.html" class="stretched-link"><h2>FARMVILLE 3</h2></a>
+                  <p>ZYNGA</p>
+                </div>
+            </div>
+          <div class="col-md-6 imagesection">
+            <img src="./images/fv3DeviceMockup.png" alt="" class="img-fluid align-self-center">
+
+           </div>
+        </div>
+      </div> <!--fv3 ends-->
+
+      <!--EnA Starts-->
+      <div class="container individualWork" id="EnA">
+        <div class="row">
+          <div class="col-md-6 d-flex align-content-between flex-wrap workDesc" id="Desc">
+            <h3>USER EXPERIENCE DESIGNER</h3>
+
+            <div>
+              <a href="./empiresandallies.html" class="stretched-link">
+                <h2>EMPIRES AND ALLIES</h2>
+              </a>
+              <p>ZYNGA</p>
+            </div>
+          </div>
+          <div class="col-md-6 imagesection">
+            <img src="./images/EnADeviceMockup.png" alt="" class="img-fluid align-self-center">
+
+          </div>
+        </div>
+      </div>
+      <!--EnA Ends-->
+      <div class="container">
+        <div class="row" id="companyHeading">
+          <div class="col-lg-7">
+            <h3>At Glu</h3>
+            <p>Involved in all aspects of the product lifecycle, from brainstorming and defining requirements with PMs to
+              designing and testing interfaces, as well as working with engineers to make sure everything comes together just right. <br><br> Here are few
+              projects I worked at Zynga.</p>
+            <br>
+          </div>
+        </div>
+      </div>
+      <!--Deer Hunter Starts-->
+      <div class="container individualWork" id="DH2018">
+        <div class="row">
+          <div class="col-md-6 d-flex align-content-between flex-wrap workDesc" id="Desc">
+            <h3>ASSOCIATE USER EXPERIENCE DESIGNER</h3>
+
+            <div>
+              <a href="./deerhunter2018.html" class="stretched-link">
+                <h2>Deer Hunter 2018</h2>
+              </a>
+              <p>GLU</p>
+            </div>
+          </div>
+          <div class="col-md-6 imagesection">
+            <img src="./images/DHDeviceMockup.png" alt="" class="img-fluid align-self-center">
+
+          </div>
+        </div>
+      </div>
+      <!--Deer Hunter Ends-->
+    <!--Footer Starts here-->
+      <div class="container" id="footer">
+        <div class="row">
+          <div class="col-lg-7">
+            <h3>
+              Email me, if you would like to know more about my work or you want have a discussion on possible collaborations.
+            </h3>
+            <br>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="d-flex justify-content-between">
+                <a href="mailto:hello@ruwaizrazak.com" type="button" class="btn btn-outline-dark">hello@ruwaizrazak.com</a>
+                <img src="./images/UpArrow.png" alt="" id="arrow">
+              </div>
+              <div class="d-flex justify-content-end" style="margin-top: 60px;">
+                <a href="./index.html" class="">Ruwaiz Razak / User Experience Designer.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- Footer ends here-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 

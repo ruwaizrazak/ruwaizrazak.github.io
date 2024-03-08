@@ -1,113 +1,407 @@
-.primary-link {
-  color: #E860FF;
+body {
+  font-family: "Inter", sans-serif;
+  color: #323232;
 }
 
-.light {
-  font-weight: 300;
+::selection {
+  background-color: rgb(250, 250, 155);
 }
 
-.bold {
-  font-weight: 700;
-}
-
-.mt-6 {
-  margin-top: 20vh !important;
-}
-
-.mt-7 {
-  margin-top: 20px !important;
-}
-
-a {
-  font-decoration: none;
-}
-
-.experience {
-  padding: 20px;
-}
-
-.experience:hover {
-  background-color: rgba(255, 255, 255, 0.31);
-  transform: scale(1.1, 1.1);
-  transition: all 0.2s ease-in;
-  transition-delay: 20ms;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.2px);
-  -webkit-backdrop-filter: blur(10.2px);
-  border-radius: 5px;
-}
-
-.link {
-  color: #E860FF;
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 4.5rem !important;
   font-weight: 400;
-  text-decoration: underline;
+  line-height: 5.438rem;
 }
 
-.listnav {
-  padding: 10px;
+.mt-4 {
+  margin-top: 50px !important;
 }
 
-.full-width {
-  width: 100%;
-}
-
-.navbar {
-  border-radius: 20px;
-  margin-top: 10px;
-  background: rgba(255, 255, 255, 0.31);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.2px);
-  -webkit-backdrop-filter: blur(10.2px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.tldr {
-  border: 5px;
-  border-color: #DEECF9;
-  border-style: solid;
-}
-
-.highlight {
-  background-color: #DEECF9;
-}
-
-#testimony {
-  background-color: #DEECF9;
-  padding: 30px;
-}
-
-#portrait {
-  max-height: 400px;
-}
-
-#gameslist {
-  max-width: 1000px;
-}
-
-#photograph {
-  background-image: url("images/me.jpg");
-  width: 80%;
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-clip: padding-box;
-  background-position-y: -80px;
+h2, h3, h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.75rem !important;
+  color: #323232 !important;
+  line-height: 3rem;
+  letter-spacing: -0.01em;
 }
 
 mark {
-  background-color: yellow !important;
-  font-weight: 700 !important;
+  background-color: chartreuse;
   padding: 5px;
 }
 
+h3, h4 {
+  font-size: 2rem !important;
+  line-height: 2.563rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.6rem !important;
+  line-height: 1.9rem;
+  font-weight: 400 !important;
+}
+
+p, .btn, a, li {
+  color: #323232;
+  font-size: 1.4rem !important;
+  line-height: 1.7rem;
+  font-weight: 400 !important;
+}
+
+li {
+  margin-left: -1rem;
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  color: #323232 !important;
+  padding: 10px;
+}
+
+@keyframes linkAnimation {
+  from {
+    text-underline-offset: 0.4em;
+  }
+  to {
+    text-underline-offset: -0.4em;
+  }
+}
+a:hover {
+  text-decoration-skip-ink: none;
+  text-decoration-color: black;
+  background-color: yellow !important;
+  text-decoration-thickness: 0.1em;
+  animation: 0.2s 1 forwards linkAnimation;
+}
+
+.navbar a {
+  font-size: 1.125rem !important;
+}
+.navbar a.active {
+  text-decoration: line-through;
+  pointer-events: none;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-bold, h4 {
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #323232;
+  color: #323232 !important;
+  font-family: "Inter", sans-serif;
+  padding: 10px 30px 10px 30px;
+  translate: 0px -10px;
+  margin: 0px 10px 0px 10px;
+  background: linear-gradient(to top, yellow 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all 0.2s ease-out;
+}
+
 .btn:hover {
+  background-position: bottom right;
+}
+
+#arrow {
+  height: 60px;
+  width: 52px;
+  transform: translateY(-100%);
+  animation: 2s infinite alternate bounce;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(-25%);
+  }
+}
+
+#footer {
+  margin-top: 100px;
+}
+#footer button {
+  margin-left: -0.2em;
+}
+#footer img {
+  height: 52px;
+  width: 60px;
+}
+
+#casestudy {
+  margin-top: 60px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.list-group-item {
+  border: none;
+  padding-left: 0;
+}
+
+.stretched-link:hover {
+  animation: none;
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 3rem !important;
+    line-height: 3.4rem;
+  }
+  h2, h3, h4 {
+    font-size: 1.8rem !important;
+    line-height: 2.2rem;
+  }
+  h3, h4 {
+    font-size: 1.5rem !important;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.2rem !important;
+    line-height: 1.6rem;
+  }
+  p, li, a, .btn {
+    color: #323232;
+    font-size: 1rem !important;
+    line-height: 1.4rem;
+    font-weight: 400 !important;
+  }
+  a {
+    padding: 5px;
+  }
+  #designprocessimage {
+    width: 30%;
+  }
+  #arrow {
+    height: 30px;
+    width: 32px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 2.5rem !important;
+    line-height: 2.8rem;
+  }
+  h2, h3, h4 {
+    font-size: 1.8rem !important;
+    line-height: 2.2rem;
+  }
+  mark {
+    background-color: chartreuse;
+    padding: 2px;
+  }
+  h3, h4 {
+    font-size: 1.5rem !important;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.2rem !important;
+    line-height: 1.6rem;
+  }
+  p, li, a, .btn {
+    color: #323232;
+    font-size: 1rem !important;
+    line-height: 1.4rem;
+    font-weight: 400 !important;
+  }
+  a {
+    padding: 4px;
+  }
+  #designprocessimage {
+    width: 30%;
+  }
+  #arrow {
+    height: 30px;
+    width: 32px;
+  }
+}
+#hero, .postHero {
+  padding: 50px 0px 100px 0;
+}
+#hero .row h1, .postHero .row h1 {
+  margin-left: -5px;
+}
+
+.row {
+  margin: 10px 0px 10px 0px;
+  --bs-gutter-x: 0rem !important;
+  padding: 0px !important;
+  position: relative;
+}
+
+.container {
+  --bs-gutter-x: 0rem;
+}
+
+#works {
+  margin-top: 100px;
+}
+
+#companyHeading {
+  margin-top: 100px;
+}
+
+.individualWork {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.individualWork .workDesc {
+  padding: 20px 0px 20px 20px;
+  height: 400px;
+  background-color: #F3F3F3;
+}
+.individualWork .imagesection {
+  align-content: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #E5E5E5;
+}
+.individualWork .imagesection img {
+  width: 90%;
+  transform: rotate(-10deg) !important;
+}
+.individualWork .imagesection img:hover {
+  transform: rotate(0deg) !important;
+}
+
+.individualWork:hover {
+  border-radius: 10px;
   transform: scale(1.1, 1.1);
-  transition: all 0.2s ease-in;
-  transition-delay: 20ms;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.2px);
+  transition: all 0.2s ease-out;
+}
+.individualWork:hover .imagesection img {
+  transform: rotate(0deg) !important;
+  transition: all 0.2s ease-out;
+}
+
+#FARMVILLE:hover .workDesc {
+  background-color: #E6FEED;
+}
+#FARMVILLE:hover .imagesection {
+  background-color: #007F22;
+}
+
+#EnA:hover .workDesc {
+  background-color: #ECF0F9;
+}
+#EnA:hover .imagesection {
+  background-color: #223965;
+}
+
+#DH2018:hover .workDesc {
+  background-color: #FEF6E6;
+}
+#DH2018:hover .imagesection {
+  background-color: #E19707;
+}
+
+.postHero {
+  padding-bottom: 10px;
+}
+.postHero button {
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
+}
+.postHero p, .postHero li, .postHero a, .postHero .btn {
+  margin-bottom: 0;
+}
+.postHero h1 {
+  margin-bottom: 0.1rem;
+}
+.postHero #AboutImage {
+  filter: saturate(0);
+}
+.postHero #AboutImage:hover {
+  animation: none !important;
+  filter: saturate(1.5);
+}
+.postHero img {
+  margin: 50px 0px 50px 0;
+}
+@keyframes imageshake {
+  0% {
+    transform: scale 1.1 rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: scale 1.1 rotate(0deg);
+  }
+}
+.postHero img:hover {
+  animation: 0.4s 1 forwards imageshake;
+  animation-timing-function: cubic-bezier(0.01, 0.98, 1, 0.32);
+}
+
+.Trailer {
+  width: 100%;
+  height: 56%;
+  margin-bottom: 50px;
+}
+.Trailer iframe {
+  width: 100%;
+  height: 50vw;
+}
+
+#gamesworked img {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  margin: 0px !important;
+}
+
+@media screen and (min-width: 480px) {
+  #gamesworked img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 0px !important;
+  }
+}
+@media screen and (min-width: 375px) {
+  #gamesworked img {
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+    margin: 0px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
