@@ -20,17 +20,11 @@
 --bs-gutter-x: 0rem;
 }
 
-#works{
-  margin-top: 100px;
 
-}
-#companyHeading {
-  margin-top: 100px;
-}
 
 .individualWork{
-  margin-top: 20px;
-  margin-bottom: 80px;
+  //margin-top: 20px;
+  //margin-bottom: 20px;
   .workDesc {
     padding: 20px 0px 20px 20px;
     height: 400px;
@@ -211,6 +205,18 @@
 }
 
 @media screen and (max-width: 375px) {
+  #hero {
+      //margin-top: 50px;
+      padding: 50px 0px 0px 0;
+
+      .row {
+        h1 {
+          margin-left: -5px;
+        }
+      }
+    }
+
+
   #gamesworked {
     img {
       width: 90px;

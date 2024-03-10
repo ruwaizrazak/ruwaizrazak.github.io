@@ -19,6 +19,7 @@ h1 {
 }
 
 h2, h3, h4 {
+  font-family: "Space Grotesk", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.75rem !important;
@@ -46,7 +47,7 @@ h4 {
 
 p, .btn, a, li {
   color: #323232;
-  font-size: 1.4rem !important;
+  font-size: 1.2rem !important;
   line-height: 1.7rem;
   font-weight: 400 !important;
 }
@@ -267,18 +268,6 @@ img {
   --bs-gutter-x: 0rem;
 }
 
-#works {
-  margin-top: 100px;
-}
-
-#companyHeading {
-  margin-top: 100px;
-}
-
-.individualWork {
-  margin-top: 20px;
-  margin-bottom: 80px;
-}
 .individualWork .workDesc {
   padding: 20px 0px 20px 20px;
   height: 400px;
@@ -421,6 +410,12 @@ img {
   }
 }
 @media screen and (max-width: 375px) {
+  #hero, .postHero {
+    padding: 50px 0px 0px 0;
+  }
+  #hero .row h1, .postHero .row h1 {
+    margin-left: -5px;
+  }
   #gamesworked img {
     width: 90px;
     height: 90px;
