@@ -14,10 +14,6 @@ h1 {
   line-height: 5.438rem;
 }
 
-.mt-4 {
-  margin-top: 50px !important;
-}
-
 h2, h3, h4 {
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
@@ -136,7 +132,7 @@ a:hover {
 }
 
 #footer {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #footer button {
   margin-left: -0.2em;
@@ -144,6 +140,9 @@ a:hover {
 #footer img {
   height: 52px;
   width: 60px;
+}
+#footer h3, #footer h4 {
+  padding-bottom: 20px;
 }
 
 #casestudy {
